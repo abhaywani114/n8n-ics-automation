@@ -2,7 +2,7 @@
 This project sets up a self-hosted n8n instance and builds a workflow to merge future events from a remote .ics calendar into a local calendar.ics file.
 
 ## ❗ Problem Statement
-Manually maintaining calendar files by merging bookings from multiple sources is time-consuming and error-prone. In this task, the goal is to automate the process using a self-hosted n8n workflow that:
+Manually maintaining calendar files by merging bookings from multiple sources. In this task, the goal is to automate the process using a self-hosted n8n workflow that:
 
 - Fetches a remote .ics calendar (containing future bookings)
 - Parses and filters only future events
