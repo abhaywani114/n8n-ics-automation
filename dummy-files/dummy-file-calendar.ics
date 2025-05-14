@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:icalendar-ruby
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Physio-care Services Appointments
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+DTSTART:20250309T030000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZNAME:EDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20251102T010000
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZNAME:EST
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+DTSTAMP;TZID=America/Toronto:20250514T090000
+UID:001@abrarajaz.com
+DTSTART;TZID=America/Toronto:20250521T093000
+DTEND;TZID=America/Toronto:20250521T094500
+DESCRIPTION:Initial evaluation session for lower back pain.
+LOCATION:Wellness Clinic - 123 Queen St W, Toronto
+ORGANIZER;CN='Physio-care Services':mailto:abhaywani@gmail.com
+SEQUENCE:100001
+STATUS:CONFIRMED
+SUMMARY:Jane D. (Initial Physiotherapy Evaluation)
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP;TZID=America/Toronto:20250514T090000
+UID:002@abrarajaz.com
+DTSTART;TZID=America/Toronto:20250718T110000
+DTEND;TZID=America/Toronto:20250718T111500
+DESCRIPTION:Follow-up session for shoulder rehabilitation.
+LOCATION:Wellness Clinic - 123 Queen St W, Toronto
+ORGANIZER;CN='Physio-care Services':mailto:abhaywani@gmail.com
+SEQUENCE:100002
+STATUS:CONFIRMED
+SUMMARY:Michael R. (Physiotherapy Follow-Up)
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTAMP;TZID=America/Toronto:20250514T090000
+UID:003@abrarajaz.com
+DTSTART;TZID=America/Toronto:20250903T100000
+DTEND;TZID=America/Toronto:20250903T101500
+DESCRIPTION:Final review session for post-op therapy.
+LOCATION:Wellness Clinic - 123 Queen St W, Toronto
+ORGANIZER;CN='Physio-care Services':mailto:abhaywani@gmail.com
+SEQUENCE:100003
+STATUS:CONFIRMED
+SUMMARY:Emily W. (Post-Operative Physiotherapy Review)
+END:VEVENT
+
+END:VCALENDAR
+

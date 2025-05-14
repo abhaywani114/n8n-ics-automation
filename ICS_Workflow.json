@@ -1,0 +1,229 @@
+{
+  "name": "ICS Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -2420,
+        -480
+      ],
+      "id": "5015d95c-a550-4e5e-b1d6-0a942eee97b7",
+      "name": "Schedule Trigger",
+      "notes": "Hit the trigger daily at 9.00 AM"
+    },
+    {
+      "parameters": {
+        "url": "https://physio-careservices.janeapp.com/ical/4XoRav9y3abkrUmy74gs/appointments.ics",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -2060,
+        -300
+      ],
+      "id": "c6e49199-2504-472a-8170-334c4ae0d4e4",
+      "name": "HTTP Request for ICS file",
+      "alwaysOutputData": true,
+      "notes": "Get the \".ics\" file from the remote via HTTP GET request."
+    },
+    {
+      "parameters": {
+        "fileSelector": "/home/dummy-files/dummy-file-calendar.ics",
+        "options": {
+          "dataPropertyName": "local-ics-file"
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        -1920,
+        -620
+      ],
+      "id": "b29ed4da-2054-45fd-ba71-e94fd19e4af8",
+      "name": "Read local .ics file",
+      "alwaysOutputData": true,
+      "notes": "Read file from the disk \n- for test purpose should be stored at '/home/dummy-files/dummy-file-calendar.ics'"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -1400,
+        -500
+      ],
+      "id": "c8cdff75-32e7-4eb8-b56d-2771b908fde9",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "data",
+        "binaryPropertyName": "remote-ics-file",
+        "options": {
+          "fileName": "remote-ics-file.ics"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        -1780,
+        -300
+      ],
+      "id": "96802dfb-a721-4352-8149-c820e5c15940",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "/home/dummy-files/output.ics",
+        "dataPropertyName": "mergedICS",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -480
+      ],
+      "id": "2ca54959-d671-4278-8a02-8bc601c22a4a",
+      "name": "Save merged ICS file to disk"
+    },
+    {
+      "parameters": {
+        "jsCode": "const ical = require('ical.js');\n\nfunction parseICS(binaryItem) {\n  try {\n    const base64Content = binaryItem.data;\n    const decoded = Buffer.from(base64Content, 'base64').toString('utf-8');\n    const jcalData = ical.parse(decoded); // May throw if malformed\n    const comp = new ical.Component(jcalData);\n    return comp.getAllSubcomponents('vevent').map(event => {\n      const vevent = new ical.Event(event);\n      return {\n        uid: vevent.uid,\n        summary: vevent.summary,\n        start: vevent.startDate.toJSDate(),\n        end: vevent.endDate.toJSDate(),\n        location: vevent.location\n      };\n    });\n  } catch (error) {\n    console.log('Failed to parse ICS file:', error.message);\n    throw new Error(`Failed to parse ICS file:`);\n  }\n}\n// Get binary data from each input item\nconst localICSBinary = $input.all()[0].binary['local-ics-file']\nconst remoteICSBinary = $input.all()[1].binary['remote-ics-file'];\n\nconst localICS = parseICS(localICSBinary);\nconst remoteICS = parseICS(remoteICSBinary);\n\nconst now = new Date();\nconst futureEvents = remoteICS.filter(event => event.start > now);\n\nconst existingUIDs = new Set(localICS.map(e => e.uid));\nconst merged = localICS.concat(futureEvents.filter(e => !existingUIDs.has(e.uid)));\n\nreturn [{ json: { mergedEvents: merged } }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1100,
+        -480
+      ],
+      "id": "25427129-0705-4a1f-b671-4abef8a0d20d",
+      "name": "Parse and Merge ICS",
+      "alwaysOutputData": false,
+      "notesInFlow": true,
+      "notes": "Parse ics files and merge them."
+    },
+    {
+      "parameters": {
+        "jsCode": "const ical = require('ical.js');\n\nconst vcalendar = new ical.Component(['vcalendar', [], []]);\n\nvcalendar.addPropertyWithValue('version', '2.0');\nvcalendar.addPropertyWithValue('prodid', '-//My ICS//EN');\n\nfor (const event of items[0].json.mergedEvents) {\n  const vevent = new ical.Component('vevent');\n\n  vevent.addPropertyWithValue('uid', event.uid);\n  vevent.addPropertyWithValue('summary', event.summary);\n\n  const dtStart = ical.Time.fromJSDate(new Date(event.start), true); // true = UTC\n  const dtEnd = ical.Time.fromJSDate(new Date(event.end), true);\n\n  vevent.addPropertyWithValue('dtstart', dtStart);\n  vevent.addPropertyWithValue('dtend', dtEnd);\n\n  if (event.location) {\n    vevent.addPropertyWithValue('location', event.location);\n  }\n\n  vcalendar.addSubcomponent(vevent);\n}\n\nreturn [\n  {\n    binary: {\n      mergedICS: {\n        data: Buffer.from(vcalendar.toString()).toString('base64'),\n        mimeType: 'text/calendar',\n        fileName: 'merged.ics',\n        fileExtension: 'ics',\n      }\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -860,
+        -480
+      ],
+      "id": "c4176864-03bb-4133-9298-6c4da90e6402",
+      "name": "JSON -> ICS",
+      "notes": "Convert the merged JSON data back to an ics file."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Read local .ics file",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request for ICS file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read local .ics file": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request for ICS file": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Parse and Merge ICS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Parse and Merge ICS": {
+      "main": [
+        [
+          {
+            "node": "JSON -> ICS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "JSON -> ICS": {
+      "main": [
+        [
+          {
+            "node": "Save merged ICS file to disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "cf915c72-e98e-4bb0-81ff-de14f6679fdf",
+  "meta": {
+    "instanceId": "8b8dd533708d81103f7a30b9a55e77d365910cd6bced11f8df6a7f3a934a8a69"
+  },
+  "id": "hBsnUNlPFokZt2Hc",
+  "tags": []
+}

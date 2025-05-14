@@ -1,0 +1,20 @@
+services:
+  n8n:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NPM_GLOBAL_PACKAGES: ical.js
+    ports:
+      - "5678:5678"
+    environment:
+      - GENERIC_TIMEZONE=Asia/Kolkata
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=password
+      - N8N_HOST=localhost
+      - NODE_FUNCTION_ALLOW_EXTERNAL=ical.js
+      - NODE_FUNCTION_ALLOW_BUILTIN=fs
+    volumes:
+      - ./my-n8n-config:/home/node/.n8n
+      - ./dummy-files/:/home/dummy-files/

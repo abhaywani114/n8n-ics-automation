@@ -1,0 +1,505 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My ICS//EN
+BEGIN:VEVENT
+UID:001@abrarajaz.com
+SUMMARY:Jane D. (Initial Physiotherapy Evaluation)
+DTSTART:20250521T133000Z
+DTEND:20250521T134500Z
+LOCATION:Wellness Clinic - 123 Queen St W\, Toronto
+END:VEVENT
+BEGIN:VEVENT
+UID:002@abrarajaz.com
+SUMMARY:Michael R. (Physiotherapy Follow-Up)
+DTSTART:20250718T150000Z
+DTEND:20250718T151500Z
+LOCATION:Wellness Clinic - 123 Queen St W\, Toronto
+END:VEVENT
+BEGIN:VEVENT
+UID:003@abrarajaz.com
+SUMMARY:Emily W. (Post-Operative Physiotherapy Review)
+DTSTART:20250903T140000Z
+DTEND:20250903T141500Z
+LOCATION:Wellness Clinic - 123 Queen St W\, Toronto
+END:VEVENT
+BEGIN:VEVENT
+UID:34796@physio-careservices.janeapp.com
+SUMMARY:Maria Teresa M. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250514T190000Z
+DTEND:20250514T191500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35778@physio-careservices.janeapp.com
+SUMMARY:Owais R. (Physiotherapy Initial Assessment)
+DTSTART:20250514T210000Z
+DTEND:20250514T213000Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35265@physio-careservices.janeapp.com
+SUMMARY:Omron R. (MVA Physiotherapy Follow-Up)
+DTSTART:20250514T213000Z
+DTEND:20250514T214500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35029@physio-careservices.janeapp.com
+SUMMARY:Basit K. (Physiotherapy Follow-up Sessions)
+DTSTART:20250514T214500Z
+DTEND:20250514T220000Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35019@physio-careservices.janeapp.com
+SUMMARY:Taj B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250514T220000Z
+DTEND:20250514T221500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35575@physio-careservices.janeapp.com
+SUMMARY:Swarnjeet S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250514T221500Z
+DTEND:20250514T223000Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35730@physio-careservices.janeapp.com
+SUMMARY:Amol S. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250516T184500Z
+DTEND:20250516T190000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35462@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250516T190000Z
+DTEND:20250516T191500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35463@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Initial Assessment)
+DTSTART:20250516T191500Z
+DTEND:20250516T194500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35118@physio-careservices.janeapp.com
+SUMMARY:Mina B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T194500Z
+DTEND:20250516T200000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34627@physio-careservices.janeapp.com
+SUMMARY:Anjana P. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250516T200000Z
+DTEND:20250516T201500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35363@physio-careservices.janeapp.com
+SUMMARY:Dianne P. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T201500Z
+DTEND:20250516T203000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35411@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250516T203000Z
+DTEND:20250516T204500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35687@physio-careservices.janeapp.com
+SUMMARY:Matthew G. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T204500Z
+DTEND:20250516T210000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35122@physio-careservices.janeapp.com
+SUMMARY:Katherine A. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T210000Z
+DTEND:20250516T211500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35412@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250516T211500Z
+DTEND:20250516T213000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35413@physio-careservices.janeapp.com
+SUMMARY:Ariel R. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T213000Z
+DTEND:20250516T214500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35711@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250516T214500Z
+DTEND:20250516T220000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35370@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250516T220000Z
+DTEND:20250516T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34799@physio-careservices.janeapp.com
+SUMMARY:Maria Teresa M. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250521T190000Z
+DTEND:20250521T191500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35214@physio-careservices.janeapp.com
+SUMMARY:Muhammad Ramzan S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250521T213000Z
+DTEND:20250521T214500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35020@physio-careservices.janeapp.com
+SUMMARY:Taj B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250521T220000Z
+DTEND:20250521T221500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35692@physio-careservices.janeapp.com
+SUMMARY:Diane E. (Physiotherapy Follow-up Sessions)
+DTSTART:20250523T190000Z
+DTEND:20250523T191500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35368@physio-careservices.janeapp.com
+SUMMARY:Margie A. (Physiotherapy Follow-up Sessions)
+DTSTART:20250523T191500Z
+DTEND:20250523T193000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35731@physio-careservices.janeapp.com
+SUMMARY:Amol S. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250523T193000Z
+DTEND:20250523T194500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35769@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250523T194500Z
+DTEND:20250523T201500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35811@physio-careservices.janeapp.com
+SUMMARY:Diana W. (Physiotherapy Follow-up Sessions)
+DTSTART:20250523T214500Z
+DTEND:20250523T220000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35371@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250523T220000Z
+DTEND:20250523T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35712@physio-careservices.janeapp.com
+SUMMARY:Yashica M. (Physiotherapy Follow-up Sessions)
+DTSTART:20250524T140000Z
+DTEND:20250524T141500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35465@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250524T160000Z
+DTEND:20250524T161500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35466@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250524T161500Z
+DTEND:20250524T163000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35467@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250524T163000Z
+DTEND:20250524T164500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:32288@physio-careservices.janeapp.com
+SUMMARY:Carine M. (Physiotherapy Follow-up Sessions)
+DTSTART:20250524T164500Z
+DTEND:20250524T170000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:33524@physio-careservices.janeapp.com
+SUMMARY:Fehmida S. (MVA Physiotherapy Follow-Up)
+DTSTART:20250524T170000Z
+DTEND:20250524T171500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35676@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250524T180000Z
+DTEND:20250524T181500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35021@physio-careservices.janeapp.com
+SUMMARY:Taj B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250528T220000Z
+DTEND:20250528T221500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35468@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250530T190000Z
+DTEND:20250530T191500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35469@physio-careservices.janeapp.com
+SUMMARY:Fozia R. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250530T191500Z
+DTEND:20250530T193000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35470@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250530T193000Z
+DTEND:20250530T194500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35732@physio-careservices.janeapp.com
+SUMMARY:Amol S. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250530T194500Z
+DTEND:20250530T200000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35372@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250530T220000Z
+DTEND:20250530T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35022@physio-careservices.janeapp.com
+SUMMARY:Taj B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250604T220000Z
+DTEND:20250604T221500Z
+LOCATION:Samy's Physiotherapy & Wellness Centre - 847 Barton St E\, Hamilto
+ n
+END:VEVENT
+BEGIN:VEVENT
+UID:35733@physio-careservices.janeapp.com
+SUMMARY:Amol S. (WSIB Physiotherapy Follow-Up)
+DTSTART:20250606T190000Z
+DTEND:20250606T191500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35373@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250606T220000Z
+DTEND:20250606T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35677@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250607T180000Z
+DTEND:20250607T181500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35374@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250613T220000Z
+DTEND:20250613T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35375@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250620T220000Z
+DTEND:20250620T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35678@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250621T180000Z
+DTEND:20250621T181500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35376@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250627T220000Z
+DTEND:20250627T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35377@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250704T220000Z
+DTEND:20250704T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35679@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250705T180000Z
+DTEND:20250705T181500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34630@physio-careservices.janeapp.com
+SUMMARY:Irma B. (Physiotherapy Follow-up Sessions)
+DTSTART:20250711T200000Z
+DTEND:20250711T201500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35378@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250711T220000Z
+DTEND:20250711T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35379@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250718T220000Z
+DTEND:20250718T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:35380@physio-careservices.janeapp.com
+SUMMARY:Rachana S. (Physiotherapy Follow-up Sessions)
+DTSTART:20250725T220000Z
+DTEND:20250725T221500Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34378@physio-careservices.janeapp.com
+SUMMARY:Break - Vacation
+DTSTART:20250815T190000Z
+DTEND:20250815T223000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34379@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250816T140000Z
+DTEND:20250816T190000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34380@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250822T190000Z
+DTEND:20250822T220000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34381@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250829T190000Z
+DTEND:20250829T220000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+BEGIN:VEVENT
+UID:34382@physio-careservices.janeapp.com
+SUMMARY:Break - 
+DTSTART:20250830T140000Z
+DTEND:20250830T183000Z
+LOCATION:Physio-Care Services - 845 Upper James St.(at Mohawk Road)\, Suite
+  208 \, Hamilton
+END:VEVENT
+END:VCALENDAR
